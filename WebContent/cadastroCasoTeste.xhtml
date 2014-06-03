@@ -1,0 +1,28 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+	<h:form>
+		<h:panelGrid columns="2">
+			Configuração:   <h:selectOneMenu value="#{configuracao.conf.descConfig}">
+								<!-- implementar combo -->
+								<f:selectItems>
+									<f:selectItem></f:selectItem>
+								</f:selectItems>
+							</h:selectOneMenu>
+			Descrição: <h:inputText value="#{casoTeste.ct.descricao}" /><br/>
+			Data de Inclusão: <h:inputText value="#{casoTeste.ct.dtInclusao}"/><br/>
+			Nome: <h:inputText value="#{casoTeste.ct.nome}" /><br/> 
+			
+			<h:dataTable value="#{casoTeste.ct.transacaos}" var="trxs" border="1">
+				<h:column> #{trxs} </h:column>
+				<h:column> #{trxs}</h:column>
+				<!-- outros colunas -->
+			</h:dataTable>
+			
+			<h:commandButton  value="Cadastrar"  action="#{casoTeste.cadastrar}" /> 
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

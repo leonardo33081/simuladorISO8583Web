@@ -1,0 +1,15 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:body>
+	<h:form>
+		<h:panelGrid columns="2">
+			Tipo de Transação: <h:inputText value="#{tipoTransacao.tipoTrx.tipoTransacao}" required="true"/><br/>
+			Código de Processamento: <h:inputText value="#{tipoTransacao.tipoTrx.codProcessamento}" required="true"/><br/>
+			MTI: <h:inputText value="#{tipoTransacao.tipoTrx.mti}" required="true"/><br/>
+			<h:commandButton  value="Cadastrar"  action="#{tipoTransacao.cadastrar}" /> 
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

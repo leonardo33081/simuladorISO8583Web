@@ -1,0 +1,15 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:body>
+	<h:form>
+		<h:panelGrid columns="2">
+			Tipo de Transação: <p:radioButton value="#{transacao.transacao.tipoTransacao}" required="true"/><br/>
+			Transação: <h:inputText value="#{transacao.transacao.msgIsoIn}" required="true"/><br/>
+			Caso de Teste: <p:radioButton value="#{transacao.transacao.casoDeTeste}" required="true"/><br/>
+			<h:commandButton  value="Cadastrar"  action="#{tipoTransacao.cadastrar}" /> 
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

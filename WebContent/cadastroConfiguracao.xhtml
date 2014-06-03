@@ -1,0 +1,18 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:body>
+	<h:form>
+		<h:panelGrid columns="2">
+			Configuração: <h:inputText value="#{configuracao.conf.configuracao}" required="true"/><br/>
+			Descrição: <h:inputText value="#{configuracao.conf.descConfig}" required="true"/><br/>
+			Host: <h:inputText value="#{configuracao.conf.host}" required="true"/><br/>
+			Porta: <h:inputText value="#{configuracao.conf.porta}" required="true"/><br/>
+			Channel: <h:inputText value="#{configuracao.conf.channel}" required="true"/><br/>
+			Packager: <h:inputText value="#{configuracao.conf.packager}" required="true"/><br/>
+			Timeout: <h:inputText value="#{configuracao.conf.timeout}" required="true"/><br/>
+			<h:commandButton  value="Cadastrar"  action="#{configuracao.cadastrar}" /> 
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>
